@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Pedro Henrique</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Icones redes Sociais -->
+  
+  <!-- STYLE CSS -->
+  <style>
+  * {
+  box-sizing: border-box;
+  }
+  body {
+  background-color: #f1f1f1;
+  }
+  body h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+  body,h1 {font-family: "Montserrat", sans-serif}
+  /* NAV BAR */
+  .w3-sidebar {height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+  @media (max-width:768px){.w3-modal-content{width:500px}.w3-modal{padding-top:50px}}
+  @media (min-width:993px){.w3-modal-content{width:900px}.w3-hide-large{display:none!important}.w3-sidebar.w3-collapse{display:block!important}}
+  @media (max-width:992px){.w3-sidebar.w3-collapse{display:none}.w3-main{margin-left:0!important;margin-right:0!important}}
+  .w3-bar-block {width: 100%; min-width: 100%; text-align:left; padding:8px 16px; display:block;border:none;white-space:normal;float:none;outline:0}
+  .w3-bar-block.w3-center .w3-bar-item{text-align:center}
+  .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+  .w3-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+  .w3-top,.w3-bottom{position:fixed;width:100%;z-index:1}
+  .w3-top{top:0}
+  .w3-text-light-grey,.w3-hover-text-light-grey:hover{color:#f1f1f1!important}
+  .w3-large{font-size:18px!important}
+  .w3-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+  .w3-bar-block .w3-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+  .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+  .w3-bar .w3-button{white-space:normal}
+  @media (max-width:600px){.w3-modal-content{margin:0 10px;width:auto!important}
+  .w3-modal{padding-top:30px}
+  .w3-dropdown-hover.w3-mobile .w3-dropdown-content,.w3-dropdown-click.w3-mobile .w3-dropdown-content{position:relative}  
+  .w3-hide-small{display:none!important}
+  .w3-mobile{display:block;width:100%!important}
+  .w3-bar-item.w3-mobile,.w3-dropdown-hover.w3-mobile,.w3-dropdown-click.w3-mobile{text-align:center}
+  .w3-dropdown-hover.w3-mobile,.w3-dropdown-hover.w3-mobile .w3-btn,.w3-dropdown-hover.w3-mobile .w3-button,.w3-dropdown-click.w3-mobile,.w3-dropdown-click.w3-mobile .w3-btn,.w3-dropdown-click.w3-mobile .w3-button{width:100%}}
+  .w3-button:hover{color:#000!important;background-color:#ccc!important}
+  .w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+  .w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+  .w3-button:disabled{cursor:not-allowed;opacity:0.3}
+  .w3-dropdown-hover:hover > .w3-button:first-child,.w3-dropdown-click:hover > .w3-button:first-child{background-color:#ccc;color:#000}
+  .w3-bar-block .w3-dropdown-hover .w3-button,.w3-bar-block .w3-dropdown-click .w3-button{width:100%;text-align:left;padding:8px 16px}
+  .w3-bar .w3-button{white-space:normal}
+  .w3-center{text-align:center!important}
+  .w3-center .w3-bar{display:inline-block;width:auto}
+  .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}
+  .w3-padding-16{padding-top:16px!important;padding-bottom:16px!important}
+  /* TOP MENU QUANDO TELA PEQUENA*/
+  .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+  .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
+  .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+  .w3-xlarge{font-size:22px!important}
+  .w3-left{float:left!important}
+  .w3-right{float:right!important}
+  .w3-padding{padding:8px 16px!important}
+
+  /* FORM PARA CENTRALIZAR CONTEUDO */
+  #regForm {
+  background-color: #ffffff;
+  margin: 80px auto;
+  font-family: Raleway;
+  padding: 40px;
+  width: 90%;
+  min-width: 500px;
+  }
+  .w3-quarter img{margin-bottom: -6px; cursor: pointer}
+  .w3-quarter img:hover{opacity: 0.6; transition: 0.3s}
+  h1 {
+  text-align: center;
+  }
+  input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+  }
+  /* Mark input boxes that gets an error on validation: */
+  input.invalid {
+  background-color: #ffdddd;
+  }
+  /* Hide all steps by default: */
+  .tab {
+  display: none;
+  }
+  .w3-quarter {
+  float: left;
+  width:25%
+  }
+  img{
+  border-style:none;
+  vertical-align:middle;
+  }
+  /* MODAL TELA CHEIA QUANDO CLICA NA IMAGEM */
+  .w3-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+  .w3-display-topright{position:absolute;right:0;top:0}
+  .w3-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+  .w3-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+  .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
+  .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+  button {
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: Raleway;
+  cursor: pointer;
+  }
+  button:hover {
+  opacity: 0.8;
+  }
+  #prevBtn {
+  background-color: #bbbbbb;
+  }
+  /* Make circles that indicate the steps of the form: */
+  .step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  }
+  .step.active {
+  opacity: 1;
+  }
+  /* Mark the steps that are finished and valid: */
+  .step.finish {
+  background-color: #4CAF50;
+  }
+  /* Musica 
+  .musica{
+    align-self: center;
+  } */
+  /* SOBRE  a{color:inherit}}*/
+  #about {
+    margin: 80px auto;
+    margin-bottom: 10px;
+    padding: 40px;
+    width: 90%;
+    min-width: 500px;
+  }
+  .w3-image{width:100%;max-width:600px}
+  .w3-dark-grey,.w3-hover-dark-grey:hover{color:#fff!important;background-color:#616161!important}
+  .w3-content{max-width:980px;margin:auto}
+  .w3-justify{text-align:justify!important}
+  /* RODAPÉ */
+  .w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+  .w3-opacity,.w3-hover-opacity:hover{opacity:0.60}.w3-opacity-off,.w3-hover-opacity-off:hover{opacity:1}
+  .w3-opacity-max{opacity:0.25}.w3-opacity-min{opacity:0.75}
+  .w3-medium{font-size:15px!important}
+  .w3-text-green,.w3-hover-text-green:hover{color:#4CAF50!important}
+  </style>
+  <!-- FIM DO STYLE CSS -->
+  <!-- FIM DO STYLE CSS -->
+  <!-- FIM DO STYLE CSS -->
+  <body>
+    <!-- Sidebar/menu -->
+    <nav  class="w3-sidebar w3-bar-block w3-black w3-animate-right w3-top w3-text-light-grey w3-large" style="z-index:3;width:250px;font-weight:bold; display:none; right:0;" id="mySidebar">
+      <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">PORTFOLIO</a>
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT ME</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+    </nav>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
+      <span class="w3-left w3-padding">PEDRO HENRIQUE BARBOSA</span>
+      <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+    </header>
+    <form id="regForm" action="/action_page.php">
+      <!-- PÁGINA UM --> <!-- PÁGINA UM -->
+      <!-- PÁGINA UM --> <!-- PÁGINA UM -->
+      <div class="tab">
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160814-wa0032.jpg" style="width:100%" onclick="onClick(this)" alt="Oi Oi.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160302-wa0005.jpg" style="width:100%" onclick="onClick(this)" alt="Comi tudo...Mas olha o resultado!!!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20170322_155711.jpg" style="width:100%" onclick="onClick(this)" alt="Treino de canto, com o papai.">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160519-wa0016.jpg" style="width:100%" onclick="onClick(this)" alt="Fazendo o dever de casa.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160509-wa0004.jpg" style="width:100%" onclick="onClick(this)" alt="Os sapinhos fazem Hum! Ah! Hummm!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/fb_img_1483287363085.jpg" style="width:100%" onclick="onClick(this)" alt="Aaaahhhhh!">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160406-wa0000.jpg" style="width:100%" onclick="onClick(this)" alt="Quê coisa é essa???">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160723-wa0002.jpg" style="width:100%" onclick="onClick(this)" alt="Let's party!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160504-wa0011.jpg" style="width:100%" onclick="onClick(this)" alt="Garoto fotogênico.">
+        </div>
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160402-wa0000.jpg" style="width:100%" onclick="onClick(this)" alt="Brincando em casa.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20161031-wa0009.jpg" style="width:100%" onclick="onClick(this)" alt="Aaaah! Eu devoro">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160827-wa0011.jpg" style="width:100%" onclick="onClick(this)" alt="Acabei de acordar!">
+        </div>
+      </div>
+      <!-- PÁGINA DOIS --> <!-- PÁGINA DOIS -->
+      <!-- PÁGINA DOIS --> <!-- PÁGINA DOIS -->
+      <div class="tab">
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160506-wa0017.jpg" style="width:100%" onclick="onClick(this)" alt="As primas adsa, Ana Luiza e Eu.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180328-wa0072.jpg" style="width:100%" onclick="onClick(this)" alt="Assistindo a aula com os amigos.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160828-wa0008.jpg" style="width:100%" onclick="onClick(this)" alt="Esse Banguela me adora!!!">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160506-wa0019.jpg" style="width:100%" onclick="onClick(this)" alt="Que foto que nada... quero degustar um brigadeiro!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180511-wa0053.jpg" style="width:100%" onclick="onClick(this)" alt="Mamãe eu te amo.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180421-wa0034.jpg" style="width:100%" onclick="onClick(this)" alt="Tarefa na escola.">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20161201-wa0009.jpg" style="width:100%" onclick="onClick(this)" alt="Dia do zoológico com os primos, Théo e Ana Luiza.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180909-wa0002.jpeg" style="width:100%" onclick="onClick(this)" alt="Dia de jogar futebol.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20161203-wa0003.jpeg" style="width:100%" onclick="onClick(this)" alt="Passeio com o papai.">
+        </div>
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180325-wa0069.jpg" style="width:100%" onclick="onClick(this)" alt="Eu e os amigos da escola.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20161023-wa0016.jpg" style="width:100%" onclick="onClick(this)" alt="Uma batitinha de nada, nem doeu, to pronto pra outra.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180510-wa0002.jpg" style="width:100%" onclick="onClick(this)" alt="Eu sou brasileiro, com muito orgulho(...)">
+        </div>
+      </div>
+      <!-- PÁGINA TRÊS --> <!-- PÁGINA TRÊS -->
+      <!-- PÁGINA TRÊS --> <!-- PÁGINA TRÊS -->
+      <div class="tab">
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20180608_184701.jpg" style="width:100%" onclick="onClick(this)" alt="Au au!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180324-wa0195.jpg" style="width:100%" onclick="onClick(this)" alt="Jogo da memória com a professora.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180625-wa0015.jpg" style="width:100%" onclick="onClick(this)" alt="Um dinossauro e sua alface.">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180616-wa0051.jpg" style="width:100%" onclick="onClick(this)" alt="Dia da quadrilha.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180324-wa0040.jpg" style="width:100%" onclick="onClick(this)" alt="Festa joga tudo pra cima.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180324-wa0017.jpg" style="width:100%" onclick="onClick(this)" alt="Baile de carnaval.">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180531-wa0003.jpg" style="width:100%" onclick="onClick(this)" alt="Só um pouquinho de brigadeiro!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20180616_141225.jpg" style="width:100%" onclick="onClick(this)" alt="Dançamos bem quadrilha em Malu?">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20180616_141334.jpg" style="width:100%" onclick="onClick(this)" alt="Caipira e a mamãe.">
+        </div>
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180713-wa0013.jpg" style="width:100%" onclick="onClick(this)" alt="Hoje não penteei o cabelo.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180331-wa0023.jpg" style="width:100%" onclick="onClick(this)" alt="Coelhinho da pascoa.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180707-wa0006.jpeg" style="width:100%" onclick="onClick(this)" alt="Roda gigante no parque.">
+        </div>
+      </div>
+      <!-- PÁGINA QUATRO --> <!-- PÁGINA QUATRO -->
+      <!-- PÁGINA QUATRO --> <!-- PÁGINA QUATRO -->
+      <div class="tab">
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180610-wa0004.jpeg" style="width:100%" onclick="onClick(this)" alt="Soltando um pipa no parque.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20180616_141403.jpg" style="width:100%" onclick="onClick(this)" alt="Papai, mamãe e eu!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180324-wa0020.jpg" style="width:100%" onclick="onClick(this)" alt="Espelho espelho meu, existe um menino mais bonito do que eu!?!?">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180827-wa0022.jpg" style="width:100%" onclick="onClick(this)" alt="Olha quem está dirigindo!!! Sai da Freeente!!!">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/sunp0408.jpg" style="width:100%" onclick="onClick(this)" alt="Peixes e patos na prefeitura.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180827-wa0029.jpg" style="width:100%" onclick="onClick(this)" alt="Nature again.. At its finest!">
+        </div>
+        
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180901-wa0006.jpg" style="width:100%" onclick="onClick(this)" alt="">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180324-wa0195.jpg" style="width:100%" onclick="onClick(this)" alt="What a beautiful scenery this sunset">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/cameringo_20170322_165641.jpg" style="width:100%" onclick="onClick(this)" alt="The Beach. Me. Alone. Beautiful">
+        </div>
+        <div class="w3-quarter">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180902-wa0008.jpg" style="width:100%" onclick="onClick(this)" alt="A boy surrounded by beautiful nature">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20161201-wa0008.jpg" style="width:100%" onclick="onClick(this)" alt="Os bixos estão soltos.">
+          <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20180331-wa0058.jpg" style="width:100%" onclick="onClick(this)" alt="Dia de virar bixo na escola.">
+        </div>
+      </div>
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+      <!-- BOTÃO DE PRÓXIMO E ANTERIOR -->
+      <!-- BOTÃO DE PRÓXIMO E ANTERIOR -->
+      <!-- BOTÃO DE PRÓXIMO E ANTERIOR -->
+      <div style="overflow: visible;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+      <!-- Circulos que indicam em que pagina esta: -->
+      <!-- Circulos que indicam em que pagina esta: -->
+      <!-- Circulos que indicam em que pagina esta: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+    <!-- SOBRE -->
+    <!-- SOBRE -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+      <h1><b>Sobre</b></h1>
+      <img src="https://uleandrocontraomundo.files.wordpress.com/2018/09/img-20160517-wa0005a.jpg" id="me" alt="Me" class="w3-image w3-padding-32">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h3>Pedro Henrique Barbosa</h3>
+        <p>Um pouco sobre o Pedro. Nascido em Sorocaba/SP. Tenho 4 anos. Sou muito fotogênico, adoro tirar fotos. Adoro correr, leitura, e todos animais são meus amigos. Sou um super-herói, e ajudo os outros super-herois no combate aos montros, principalmente o Hulk e o Flash.
+        </p>
+      </div>
+    </div>
+    <!-- RODAPÉ DA PÁGINA -->
+    <!-- RODAPÉ DA PÁGINA -->
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+      <div class="musica">
+        <audio autoplay loop controls>
+          <source src="https://sites.google.com/site/projetoolharnacidade/o-projeto/arquivos/Of_Monsters_and_Men_-_Mountain_Sound.mp3" type="audio/mpeg">
+          <source src="https://sites.google.com/site/projetoolharnacidade/o-projeto/arquivos/14-maskavo-um_anjo_do_ceu.mp3" type="audio/mpeg">
+          <source src="https://sites.google.com/site/projetoolharnacidade/o-projeto/arquivos/01_Bittersweet_Symphony.mp3" type="audio/mpeg">
+          Seu navegador não suporta HTML5.
+        </audio>
+      </div>
+      <br>
+    	<i class="fa fa-facebook-official w3-hover-opacity"></i>
+    	<i class="fa fa-instagram w3-hover-opacity"></i>
+    	<a class="w3-light-grey" href="https://api.whatsapp.com/send?phone=55015991575155&text=Olá,%20achei%20seu%20contato%20pela%20página%20do%20Pedro!" title="Whats App" target="_blank"><i class="fa fa-whatsapp w3-hover-opacity"></i></a>
+    	<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    	<a class="w3-light-grey" href="https://github.com/UleandroSI" title="Github UleandroSI" target="_blank"> <i class="fa fa-github w3-hover-opacity"></i></a>
+    	<a class="w3-light-grey" href="https://www.linkedin.com/in/uleandrosp" title="Linkedin Leandro" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+    	<p class="w3-medium">Desenvolvido por <a href="https://uleandrocontraomundo.wordpress.com" target="_blank" class="w3-hover-text-green">Uleandro SI</a></p>
+    </footer>
+    <!-- SCRIPTS DA PÁGINA -->
+    <!-- SCRIPTS DA PÁGINA -->
+    <!-- SCRIPTS DA PÁGINA -->
+    <script>
+    // Script to open and close sidebar
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+    // Modal da Galeria de imagens
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    // SCRIPT DAS PAGINAS TAB
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the crurrent tab
+    function showTab(n) {
+    // This function will display the specified tab of the form...
+    var x = document.getElementsByClassName("tab");
+    x[n].style.display = "block";
+    //... and fix the Previous/Next buttons:
+    if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+    } else {
+    document.getElementById("prevBtn").style.display = "inline";
+    }
+    if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "Primeira";
+    } else {
+    document.getElementById("nextBtn").innerHTML = "Next";
+    }
+    //... and run a function that will display the correct step indicator:
+    fixStepIndicator(n)
+    }
+    function nextPrev(n) {
+    // This function will figure out which tab to display
+    var x = document.getElementsByClassName("tab");
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form...
+    if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    currentTab = 0;
+    //document.getElementById("regForm").submit();
+    //return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+    }
+    function validateForm() {
+    // This function deals with validation of the form fields
+    var x, y, i, valid = true;
+    x = document.getElementsByClassName("tab");
+    y = x[currentTab].getElementsByTagName("input");
+    // A loop that checks every input field in the current tab:
+    for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+    // add an "invalid" class to the field:
+    y[i].className += " invalid";
+    // and set the current valid status to false
+    valid = false;
+    }
+    }
+    // If the valid status is true, mark the step as finished and valid:
+    if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+    }
+    return valid; // return the valid status
+    }
+    function fixStepIndicator(n) {
+    // This function removes the "active" class of all steps...
+    var i, x = document.getElementsByClassName("step");
+    for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+    }
+    //... and adds the "active" class on the current step:
+    x[n].className += " active";
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="UleandroSI">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="IMG_OSB/logo-1.png" type="image/png" sizes="16x16"> <!-- Favicon -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Carrega os icones para mostrar o menu (bars) e o social media-->
+		<title>Cartão OSB Sorocaba</title>
+		<style type="text/css" media="screen">
+			body {
+				background-image: url("IMG_OSB/lights-background.jpg");
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+			/* HEADER */
+			.header img{
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				border-radius: 5px 5px 35px 35px;
+				min-height: 80px;
+				max-height: 150px;
+				width: 95%
+			}
+			/* MENU */
+			.topnav {
+				overflow: hidden;
+  				background-color: #333;
+  				position: relative;
+  			}
+  			.topnav #myLinks {
+  				display: none;
+  			}
+  			.topnav a {
+  				float: left;
+  				color: white;
+  				padding: 14px 16px;
+  				text-decoration: none;
+  				font-size: 17px;
+  			}
+  			.topnav a.icon {
+  				float: right;
+  			}
+  			.topnav a:hover {
+  				background-color: #ddd;
+  				color: black;
+  			}
+  			.active {
+  				background-color: #4CAF50;
+  				color: white;
+  			}
+
+			/* SLIDESHOW CONTAINER */
+			* {box-sizing:border-box}
+			.slideshow-container {
+				max-width: 1000px;
+				position: relative;
+				margin: auto;
+			}
+			/* Esconde as imagens por default */
+			.osSlides {
+				display: none;
+			}
+			/* Botões de anterior e próximo */
+			.prev, .next {
+				cursor: pointer;
+				position: absolute;
+				top: 50%;
+				width: auto;
+				margin-top: -22px;
+				padding: 16px;
+				color: white;
+				font-weight: bold;
+				font-size: 18px;
+				transition: 0.6s ease;
+				border-radius: 0 3px 3px 0;
+			}
+			/* Posição do botão "next" do lado direito */
+			.next {
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover, .next:hover {
+				background-color: rgba(0,0,0,0.8);
+			}
+			/* Texto Caption */
+			.text {
+				color: #3333cc;
+				font-size: 15px;
+				padding: 8px 12px;
+				position: absolute;
+				bottom: 8px;
+				width: 100%;
+				text-align: center;
+			}
+			/* Number text (1/3 etc) */
+			.numbertext {
+				color: #f2f2f2;
+				font-size: 12px;
+				padding: 8px 12px;
+				position: absolute;
+				top: 0;
+			}
+			/* The dots/bullets/indicators */
+			.dot {
+				cursor: pointer;
+				height: 15px;
+				width: 15px;
+				margin: 0 2px;
+				background-color: #bbb;
+				border-radius: 50%;
+				display: inline-block;
+				transition: background-color 0.6s ease;
+			}
+			.active, .dot:hover {
+				background-color: #717171;
+			}
+			/* Fading animation */
+			.fade {
+				-webkit-animation-name: fade;
+				-webkit-animation-duration: 1.5s;
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+			@-webkit-keyframes fade {
+				from {opacity: .4}
+				to {opacity: 1}
+			}
+			@keyframes fade {
+				from {opacity: .4}
+				to {opacity: 1}
+			}
+			/* STYLE DIV SOCIAL */
+			.colunas {
+				float: left;
+				width: 25%;
+				padding: 15px;
+			}
+			.socialMedia:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.fa-facebook {
+				background: #3B5998;
+				color: white;
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				font-size: 30px;
+				text-align: center;
+				padding: 20px;
+				text-decoration: none;
+				margin: 5px 2px;
+				border-radius: 48%;
+			}
+			.fa-envelope {
+				background: black;
+				color: white;
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				font-size: 30px;
+				text-align: center;
+				padding: 20px;
+				text-decoration: none;
+				margin: 5px 2px;
+				border-radius: 48%;
+			}
+			.fa-youtube {
+				background: #bb0000;
+				color: white;
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				font-size: 30px;
+				text-align: center;
+				padding: 20px;
+				text-decoration: none;
+				margin: 5px 2px;
+				border-radius: 48%;
+			}
+			.fa-globe {
+				background: #001a00;
+				color: white;
+				display: block;
+				margin-right: auto;
+				margin-left: auto;
+				font-size: 30px;
+				text-align: center;
+				padding: 20px;
+				text-decoration: none;
+				margin: 5px 2px;
+				border-radius: 48%;
+			}
+			.adress{
+				display: inline;
+				width: 100%;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- DIV HEADER -->
+		<div class="header">
+			<img src="http://sorocaba.osbrasil.org.br/wp-content/uploads/sites/58/2018/09/logoOSB.png" alt="Header OSB Sorocaba">
+		</div>
+		<!-- FIM DA DIV HEADER -->
+		<!-- MENU SUPERIOR -->
+		 <div class="topnav">
+		 	<a href="http://sorocaba.osbrasil.org.br/" target="_blank" active">Home</a>
+		 	<div id="myLinks">
+		 		<a href="http://osbrasil.org.br/cadastre-se-e-receba-noticias-por-e-mail/">News</a>
+		 		<a href="http://osbrasil.org.br/wp-content/uploads/2018/03/OSB_C%C3%B3digo-de-Conduta.pdf">Conduta</a>
+		 		<a href="http://sorocaba.osbrasil.org.br/o-que-e-o-observatorio-social-do-brasil-osb/">O que é</a>
+		 	</div>
+		 	<a href="javascript:void(0);" class="icon" onclick="MenuIcon()">
+		 		<i class="fa fa-bars"></i>
+		 	</a>
+		 </div> 
+		<!-- FIM DO MENU SUPERIOR -->
+		<!-- Slideshow -->
+		<div class="slideshow-container">
+			<!-- Imagens em Full-width com numero e caption -->
+			<div class="osSlides fade">
+				<div class="numbertext">1 / 3</div>
+				<img src="http://sorocaba.osbrasil.org.br/wp-content/uploads/sites/58/2018/09/IMG-20180904.jpg" style="width:100%">
+				<div class="text"></div>
+			</div>
+			<div class="osSlides fade">
+				<div class="numbertext">2 / 3</div>
+				<img src="http://sorocaba.osbrasil.org.br/wp-content/uploads/sites/58/2018/09/ADESIVO-01.jpg" style="width:100%">
+				<div class="text">
+					
+				</style>Vote Consciente.</div>
+			</div>
+			<div class="osSlides fade">
+				<div class="numbertext">3 / 3</div>
+				<img src="http://sorocaba.osbrasil.org.br/wp-content/uploads/sites/58/2018/09/MapaOSB.png" style="width:100%">
+				<div class="text">Mapa OSB Sorocaba/SP</div>
+			</div>
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+		<!-- Div Social media -->
+		<div class="socialMedia" style= "width: 100%">
+			<div class="colunas">
+				<a href="https://www.facebook.com/sorocaba.osbrasil.org.br/" target="_blank" class="fa fa-facebook"></a>
+			</div>
+			<div class="colunas">
+				<a href="https://docs.google.com/forms/d/e/1FAIpQLScYyMYUi2fYKVtN1g0oQUWPRN5sZ8zAKShi0WksYMMhbvs4wg/viewform?c=0&w=1" target="_blank" class="fa fa-envelope"></a>
+			</div>
+			<div class="colunas">
+				<a href="https://www.youtube.com/user/osdobrasil" target="_blank" class="fa fa-youtube"></a>
+			</div>
+			<div class="colunas">
+				<a href="http://sorocaba.osbrasil.org.br/" target="_blank" class="fa fa-globe"></a>
+			</div>
+		</div>
+		<!-- Fim da Div Social media -->
+		<!-- Div Endereço -->
+		<div class="adress">
+			<address>
+				<p>
+					Visite nos:<br>
+				R: Artur Caldini, 602 Jardim Saira Sorocaba,SP</p><br>
+				Desenvolvido por <a href="mailto:uleandrosp@gmail.com?subject=contatoOSB" "email me">Uleandro SI</a>
+			</address>
+		</div>
+
+		<!-- Scripts rodam na página -->
+		<!-- Script mostra itens do Menu-->
+		<script>
+			function MenuIcon() {
+				var x = document.getElementById("myLinks");
+				if (x.style.display === "block") {
+					x.style.display = "none";
+				}
+				else {
+					x.style.display = "block";
+				}
+			}
+		</script>
+	
+		<!-- Script passa Slides do Slidshow-->
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("osSlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+					if (n < 1) {slideIndex = slides.length}
+						for (i = 0; i < slides.length; i++) {
+							slides[i].style.display = "none";
+						}
+						for (i = 0; i < dots.length; i++) {
+							dots[i].className = dots[i].className.replace("active", "");
+						}
+						slides[slideIndex-1].style.display = "block";
+						dots[slideIndex-1].className += "active";
+			}
+		</script>
+	</body>
+</html>
